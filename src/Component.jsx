@@ -1,9 +1,10 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 
 import './Component.css'
 
 export default function ExampleComponent () {
     const [count, setCount] = useState(0)
+    const [expression, setExpression] = useState('expression')
 
     return (
         <div id="root">
@@ -17,7 +18,7 @@ export default function ExampleComponent () {
                 <button onClick={() => setCount((count) => count + 1)}>
                     count is {count}
                 </button>
-                <input type="text" label="Search" value="expression"/>
+                <input type="text" label="Search" data-testid="expression" value="expression" onChange={(event) => setExpression(event.target.value) }/>
                 <p>
                     Edit <code>src/Component.test.jsx</code> and save to test HMR
                 </p>
