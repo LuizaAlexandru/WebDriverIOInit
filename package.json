@@ -15,7 +15,7 @@
   "scripts": {
     "build": "esbuild ./src/main.jsx --bundle --outfile=./dist/out.js",
     "dev": "node ./dist/out.js",
-    "wdio": "wdio run ./wdio.conf.js"
+    "test": "wdio run ./wdio.conf.js"
 
   },
   "dependencies": {
