@@ -17,6 +17,7 @@ export default function ExampleComponent () {
                 <button onClick={() => setCount((count) => count + 1)}>
                     count is {count}
                 </button>
+                <input type="text" label="Search" value="expression"/>
                 <p>
                     Edit <code>src/Component.test.jsx</code> and save to test HMR
                 </p>
