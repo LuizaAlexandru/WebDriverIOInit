@@ -9,14 +9,13 @@
     "@wdio/cli": "^8.32.0",
     "@wdio/mocha-framework": "^8.31.1",
     "@wdio/spec-reporter": "^8.31.1",
-    "esbuild": "0.18.20",
+    "parcel": "^2.11.0",
+    "process": "^0.11.10",
     "react": "^18.2.0"
   },
   "scripts": {
-    "build": "esbuild ./src/main.jsx --bundle --outfile=./dist/out.js",
-    "dev": "node ./dist/out.js",
+    "dev": "npx parcel src/index.html",
     "test": "wdio run ./wdio.conf.js"
-
   },
   "dependencies": {
     "react-dom": "^18.2.0"

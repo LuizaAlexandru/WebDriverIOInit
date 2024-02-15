@@ -1,5 +1,5 @@
 import * as React from 'react'
-import * as Server from 'react-dom/server'
+import { createRoot } from 'react-dom/client'
 import ExampleComponent from './Component.jsx'
 
 let Container = () =>
@@ -8,4 +8,7 @@ let Container = () =>
     <ExampleComponent />
   </div>)
 
-console.log(Server.renderToString(<Container />))
+const root = createRoot(document.getElementById('root'));
+root.render(<Container />);
+
+
