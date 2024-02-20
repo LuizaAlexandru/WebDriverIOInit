@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/WebDriverIOInit.iml" filepath="$PROJECT_DIR$/.idea/WebDriverIOInit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/WebDriverIOFull.iml" filepath="$PROJECT_DIR$/.idea/WebDriverIOFull.iml" />
     </modules>
   </component>
 </project>
