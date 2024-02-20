@@ -28,11 +28,14 @@ app.use(bodyParser.urlencoded({ extended: false }))
       next();
   });
 
-app.get('/', (req, res) => {
-  res.send('index.html')
+app.get('/product/:id', (req, res) => {
+
+  const id = req.params.id;
+  console.log('ID: ', id);
+  res.send('ID: '+ id);
 })
 
-app.post('/', (req,res) => {
+app.post('/login', (req,res) => {
   let data = req.body;
   res.send('Data Received: ' + JSON.stringify(data));
   console.log(req)
